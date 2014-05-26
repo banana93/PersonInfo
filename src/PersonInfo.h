@@ -7,7 +7,7 @@ typedef struct PersonInfo_t
 	char lastName[21];
 	int age;
 	float height;
-	unsigned long int telephone;
+
 } PersonInfo;
 
 int setAge(PersonInfo *info, int age);

@@ -35,14 +35,6 @@ int setHeight(PersonInfo *info, float height)
 	}
 }
 
-int setTelephone(PersonInfo *info, unsigned long int telephone)
-{
-	info->telephone = telephone;
-	if((info->telephone) == 0)
-	{
-		return 0;
-	}
-}
-	
+
 
 

@@ -59,13 +59,7 @@ void test_height_given_negative_1_should_return_0(void)
 	TEST_ASSERT_EQUAL(0, heightresult);
 }
 
-void test_telephone_given_long_integer_start_with_0_return_0(void)
-{
-	int telnumber;
-	PersonInfo BananaInfo;
-	telnumber = setTelephone(&BananaInfo, 0111);
-	TEST_ASSERT_EQUAL(0, telnumber);
-}
+
 
 
 
