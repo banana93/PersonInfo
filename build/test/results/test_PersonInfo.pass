@@ -1,0 +1,22 @@
+---
+:source:
+  :path: test
+  :file: test_PersonInfo.c
+:successes:
+- :test: test_setAge_given_131_should_return_0
+  :line: 13
+  :message: ''
+- :test: test_setAge_given_23_should_return_1
+  :line: 22
+  :message: ''
+- :test: test_height_given_1_should_return_1
+  :line: 30
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout: []
