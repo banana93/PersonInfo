@@ -31,8 +31,12 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_setAge_given_131_should_return_0(void);
+extern void test_setAge_given_negative_1_should_return_0(void);
 extern void test_setAge_given_23_should_return_1(void);
+extern void test_height_given_4_should_return_0(void);
 extern void test_height_given_1_should_return_1(void);
+extern void test_height_given_negative_1_should_return_0(void);
+extern void test_telephone_given_long_integer_start_with_0_return_0(void);
 
 
 //=======Test Reset Option=====
@@ -49,8 +53,12 @@ int main(void)
   Unity.TestFile = "test_PersonInfo.c";
   UnityBegin();
   RUN_TEST(test_setAge_given_131_should_return_0, 13);
-  RUN_TEST(test_setAge_given_23_should_return_1, 22);
-  RUN_TEST(test_height_given_1_should_return_1, 30);
+  RUN_TEST(test_setAge_given_negative_1_should_return_0, 22);
+  RUN_TEST(test_setAge_given_23_should_return_1, 30);
+  RUN_TEST(test_height_given_4_should_return_0, 38);
+  RUN_TEST(test_height_given_1_should_return_1, 46);
+  RUN_TEST(test_height_given_negative_1_should_return_0, 54);
+  RUN_TEST(test_telephone_given_long_integer_start_with_0_return_0, 62);
 
   return (UnityEnd());
 }

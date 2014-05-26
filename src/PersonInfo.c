@@ -18,5 +18,31 @@ int setAge(PersonInfo *info, int age)
 	}
 }
 
+int setHeight(PersonInfo *info, float height)
+{
+	info->height = height;
+	if((info->height) > 3)
+	{
+		return 0;
+	}
+	else if((info->height) < 0)
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+}
+
+int setTelephone(PersonInfo *info, unsigned long int telephone)
+{
+	info->telephone = telephone;
+	if((info->telephone) == 0)
+	{
+		return 0;
+	}
+}
+	
 
 

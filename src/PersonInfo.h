@@ -11,5 +11,7 @@ typedef struct PersonInfo_t
 } PersonInfo;
 
 int setAge(PersonInfo *info, int age);
+int setHeight(PersonInfo *info, float height);
+int setTelephone(PersonInfo *info, unsigned long int telephone);
 
 #endif // PersonInfo_H
